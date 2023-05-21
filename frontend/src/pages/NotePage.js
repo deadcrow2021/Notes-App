@@ -21,7 +21,7 @@ const NotePage = (props) => {
     }
 
     const update_note = async () => {
-        fetch(`http://127.0.0.1:8000/data/update/${id}`, {
+        fetch(`http://127.0.0.1:8000/data/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-type': 'application/json'
@@ -31,7 +31,7 @@ const NotePage = (props) => {
     }
     
     const delete_note = async () => {
-        fetch(`http://127.0.0.1:8000/data/delete/${id}`, {
+        fetch(`http://127.0.0.1:8000/data/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-type': 'application/json'
@@ -57,7 +57,7 @@ const NotePage = (props) => {
     }
 
     const create_note = async () => {
-        fetch('http://127.0.0.1:8000/data/create/', {
+        fetch('http://127.0.0.1:8000/data/', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
