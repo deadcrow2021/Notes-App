@@ -12,12 +12,14 @@ import {
 function App() {
   return (
     <Router>
-      <div className='App'>
-        <Header />
-        <Routes>
-          <Route path='/' exact Component={NoteListPage}/>
-          <Route path='/note/:id' Component={NotePage}/>
-        </Routes>
+      <div className='container dark'>
+        <div className='app'>
+          <Header />
+          <Routes>
+            <Route path='/' exact Component={NoteListPage}/>
+            <Route path='/note/:id' Component={NotePage}/>
+          </Routes>
+        </div>
       </div>
     </Router>
   );
